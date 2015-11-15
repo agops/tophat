@@ -11,13 +11,14 @@
             "type": "amazon-ebs",
             "associate_public_ip_address": true,
             "region": "us-east-1",
-            "source_ami": "ami-e3106686",
+            "source_ami": "ami-60b6c60a",
             "instance_type": "m4.large",
             "ssh_username": "ec2-user",
             "ami_name": "{{user `ami_name`}}",
             "subnet_id": "{{user `subnet_id`}}",
             "vpc_id": "{{user `vpc_id`}}",
-            "security_group_id": "{{user `sg_id`}}"
+            "security_group_id": "{{user `sg_id`}}",
+            "ssh_pty": true
         }
     ],
     "provisioners": [
